@@ -6,6 +6,6 @@ Package.on_use(function (api) {
 	if(api.export) {
 		api.export('WaveSurfer');
 	}
-	api.add_files('lib/build/wavesurfer.min.js', 'client');
+	api.add_files('lib/src/wavesurfer.js', 'client');
 	api.add_files('export-wavesurfer.js', 'client');
 });
