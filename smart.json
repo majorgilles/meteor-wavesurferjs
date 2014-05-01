@@ -3,7 +3,7 @@
       	"description": "wavesurferjs implementation for Meteor",
       	"homepage": "https://github.com/oaeide/meteor-wavesurferjs",
       	"author": "Øyvind Andreas Eide <oaeide@gmail.com>",
-      	"version": "0.1.5",
+      	"version": "0.1.6",
       	"git": "https://github.com/oaeide/meteor-wavesurferjs.git",
       	"packages": {}
       }
