@@ -1,11 +1,15 @@
 Package.describe({
-	summary: 'WaveSurferjs Web Audio Waveform Visualizer'
+	name: 'majorgilles:wavesurfer',
+	summary: 'WaveSurferjs Web Audio Waveform Visualizer wrapper for meteor',
+	version: '0.0.1',
+	git:  'https://github.com/majorgilles/meteor-wavesurferjs'
 });
 
 Package.on_use(function (api) {
-	if(api.export) {
-		api.export('WaveSurfer');
-	}
-	api.add_files('lib/src/wavesurfer.js', 'client');
-	api.add_files('export-wavesurfer.js', 'client');
+	api.versionsFrom('METEOR@0.9.0');
+
+	api.addFiles('lib/src/wavesurfer.js');
+	api.addFiles('export.js');
+
+	api.export('WaveSurfer');
 });
