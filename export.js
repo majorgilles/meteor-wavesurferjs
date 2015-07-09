@@ -3,4 +3,3 @@
  */
 
 WaveSurfer = this.WaveSurfer;
-
