@@ -8,8 +8,8 @@ Package.describe({
 Package.on_use(function (api) {
 	api.versionsFrom('METEOR@0.9.0');
 
-	api.addFiles('lib/src/wavesurfer.js');
-	api.addFiles('export.js');
+	api.addFiles('lib/src/wavesurfer.js', 'client');
+	api.addFiles('export.js', 'client');
 
-	api.export('WaveSurfer');
+	api.export('WaveSurfer', 'client');
 });
